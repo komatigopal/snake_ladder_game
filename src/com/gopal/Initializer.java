@@ -110,7 +110,7 @@ public class Initializer {
                 Snake snake = new Snake(downPosition, endPosition, instance);
                 instance.getSnakes().add(snake);
             } catch (Exception e) {
-                System.out.println("" + e.getMessage());
+                System.out.println(e.getMessage());
                 System.out.println("Snake not insrted..., Kindly insert again...");
                 i--;
             }
@@ -131,7 +131,7 @@ public class Initializer {
                 Ladder ladder = new Ladder(upPosition, endPosition, instance);
                 instance.getLadders().add(ladder);
             } catch (Exception e) {
-                System.out.println("" + e.getMessage());
+                System.out.println(e.getMessage());
                 System.out.println("Ladder not insrted..., Kindly insert again...");
                 i--;
             }
