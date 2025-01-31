@@ -13,7 +13,7 @@ public class Initializer {
         instance = GetLaddersSnackesUsers.getInstance();
         Scanner scanner = new Scanner(System.in);
         prepareLadders(scanner);
-        preparesnakes(scanner);
+        prepareSnakes(scanner);
         prepareUsers(scanner);
         System.out.println("main - instance - " + instance);
         scanner.close();
@@ -97,7 +97,7 @@ public class Initializer {
         sc.close();
     }
 
-    private static void preparesnakes(Scanner scanner) {
+    private static void prepareSnakes(Scanner scanner) {
         System.out.println("Enter number of Snakes");
         int noOfSnakes = scanner.nextInt();
         for (int i = 0; i < noOfSnakes; i++) {
